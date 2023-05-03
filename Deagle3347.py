@@ -10,6 +10,7 @@ N = '\033[0m'
 
 white = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(32000)
+bytes = random._urandom(35531)
 
 os.system("clear")
 print(" ")

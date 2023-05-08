@@ -1,7 +1,7 @@
 import os
 import time
 import socket
-import scapy.all as scapy.all
+import scapy
 import random
 import sys
 

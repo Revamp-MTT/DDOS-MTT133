@@ -1,6 +1,7 @@
-J ... X3import os
+import os
 import time
 import socket
+import scapy.all as scapy.all
 import random
 import sys
 

